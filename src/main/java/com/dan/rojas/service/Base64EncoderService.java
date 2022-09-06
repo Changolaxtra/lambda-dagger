@@ -19,7 +19,7 @@ public class Base64EncoderService implements EncoderService {
     public String encode(BufferedImage image) throws GeneratorException {
         try {
             ByteArrayOutputStream os = new ByteArrayOutputStream();
-            ImageIO.write(image, "png", os);
+            ImageIO.write(image, PNG, os);
             return Base64.getEncoder().encodeToString(os.toByteArray());
         } catch (IOException e) {
             log.error("Error encoding image.", e);
