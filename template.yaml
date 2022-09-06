@@ -7,10 +7,10 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Runtime: java8
-      Handler: com.dan.rojas.App::handleRequest
+      Handler: com.dan.rojas.Handler::handleRequest
       Timeout: 60
       MemorySize: 512
-      CodeUri: ./target/lambda-dagger-terraform.jar
+      CodeUri: ./target/lambda-dagger.jar
       # Attach policies here to give the function permission to access other AWS resources if needed
       # See: https://github.com/awslabs/serverless-application-model/blob/master/docs/policy_templates.rst
       # eg:
