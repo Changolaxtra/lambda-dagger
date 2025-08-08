@@ -6,7 +6,7 @@ Resources:
   AppFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Runtime: java8
+      Runtime: java11
       Handler: com.dan.rojas.Handler::handleRequest
       Timeout: 60
       MemorySize: 512
